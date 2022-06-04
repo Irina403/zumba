@@ -3,31 +3,35 @@ extends _layout
 block vars
 	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'HOME'}
 block content_block
-	
+	.background
 	section.home 
 		.home__background
 			.section_in
-				.home__title 
-					h1 ZUMBA FiTNESS 
-				.home__text танцуй под латинскую музыку, сжигай калорий и получай заряд бодрости на всю неделю!
+				.home__wrapper
+					.home__informBlock
+						.home__title 
+							h1 ZUMBA FiTNESS 
+						.home__text танцуй под латинскую музыку, сжигай калорий и получай заряд бодрости на всю неделю!
 
-			.section_in 
-				.contactForm 
-					.contactForm__title Запишись на первое занятие БЕСПЛАТНО
+		
+	section.form
+		.section_in 
+			.contactForm 
+				.contactForm__title Запишись на первое занятие БЕСПЛАТНО
 
-					.contactForm__block 
-						input(type="text" placeholder="Имя")
-						input(type="text" placeholder="Телефон")
-						.contactForm__button
-							.button Записаться
-					
-						input(type="checkbox" id="check")
-						label(for="click") Чекбокс
+				.contactForm__block 
+					input.contactForm__input(type="text" placeholder="Имя")
+					input.contactForm__input(type="text" placeholder="Телефон")
+					.contactForm__button.button
+						.button__link Записаться
+				.contactForm__checkBlock
+					input(type="checkbox" id="check")
+					label(for="click") Согласен на обработку персональных данных
 
-			.section_in 
-				.aboutUs 
-					.aboutUs__row 
-						.aboutUs__col 
-							img(src="i/about_zumba.png", alt="")
-						.aboutUs__col 
-							.aboutUs__title.titleBlock ЧТО ТАКОЕ Zumba?
+		.section_in 
+			.aboutUs 
+				.aboutUs__row 
+					.aboutUs__col 
+						img(src="i/about_zumba.png", alt="")
+					.aboutUs__col 
+						.aboutUs__title.titleBlock ЧТО ТАКОЕ Zumba?

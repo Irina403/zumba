@@ -1,4 +1,76 @@
-body{
+// body{
+
+// }
+.background{
     background-image: url(../i/fon.png);
- background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+.base{
+    background-image: url(../i/main_bg.png);
+    background-repeat:no-repeat;
+}
+.home {
+    padding-top: 29rem;
+    &__title{
+        margin-bottom: 5rem;
+        font-size: 9rem;
+        font-family: $font_2;
+        text-align: center;
+		
+    }
+    &__text{
+        text-align: center;
+        font-size: 3.6rem;
+        font-family: $font_1;
+        margin-bottom: 34rem;
+    }
+    &__informBlock{
+        width: 82rem;
+    }
+    &__wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+
+    }
+}
+.contactForm{
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+
+    &__title {
+        font-size: 6rem;
+        color: #bf1b98;
+        font-family: $font_3;
+        width: 95rem;
+        margin-bottom: 6rem;
+    }
+    &__input{
+        width: 28rem;
+        border:1px solid #bf1b98;
+        border-radius: 6px;
+        height: 7rem;
+        text-align: center;
+    }
+    &__block{
+        display: flex;
+    }
+    &__input{
+        margin-right: 4rem;
+    }
+    &__checkBlock{
+        display: flex;
+        margin-top: 1rem;
+    }
+
+} 
+label{
+    font-size: 1.2rem;
+    color: #999999;
 }
