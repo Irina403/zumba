@@ -14,4 +14,7 @@
 	@include bp($point_2) {
 		height: $header_mob;
 	}
+	&__background{
+		background-image: url(i/fon.png);
+	}
 }
