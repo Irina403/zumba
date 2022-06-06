@@ -3,7 +3,7 @@ extends _layout
 block vars
 	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'HOME'}
 block content_block
-	
+
 	section.home 
 		.section_in
 			.home__title 
@@ -19,7 +19,7 @@ block content_block
 					input(type="text" placeholder="Телефон")
 					.contactForm__button
 						.button Записаться
-				
+
 					input(type="checkbox" id="check")
 					label(for="click") Чекбокс
 
@@ -30,3 +30,11 @@ block content_block
 						img(src="i/about_zumba.png", alt="")
 					.aboutUs__col 
 						.aboutUs__title.titleBlock ЧТО ТАКОЕ Zumba?
+
+	ul.about_service--list 
+		-for(i = 1; i < 5; i++)
+			- title = ['Вариантё', 'Второй', 'Free', 'Four', 'Five']
+			- src = 'i/icon' + i + '.svg'
+			li
+				p=title[i]
+				img(src=`${src}`, alt="")
