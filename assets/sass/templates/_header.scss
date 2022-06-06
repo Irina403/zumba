@@ -14,4 +14,39 @@
 	@include bp($point_2) {
 		height: $header_mob;
 	}
+	&__block{
+		width: 100%;
+		padding-top: 4rem;
+		// position: absolute;
+		z-index: 9;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+.nav {
+	&__list{
+	
+		display: flex;
+	}
+	a{
+		color: #fff;
+		text-decoration: none;
+		font-size: 1.6rem;
+		font-family: $font_1;
+		margin-left: 4.5rem;
+	}
+}
+.contactHead{
+	&__tel a{
+		font-size: 1.8rem;
+		color:#fff;
+		font-family: $font_1;
+	}
+	&__info{
+		font-size: 1.4rem;
+		color: #999999;;
+		font-family: $font_1;
+
+	}
 }

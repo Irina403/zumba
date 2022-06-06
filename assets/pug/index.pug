@@ -3,25 +3,42 @@ extends _layout
 block vars
 	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'HOME'}
 block content_block
+<<<<<<< HEAD
 
+=======
+	.background
+>>>>>>> 5fc38f573a92b404e6d9d76c288c08857ea6c0db
 	section.home 
-		.section_in
-			.home__title 
-				h1 ZUMBA FiTNESS 
-			.home__text танцуй под латинскую музыку, сжигай калорий и получай заряд бодрости на всю неделю!
+		.home__background
+			.section_in
+				.home__wrapper
+					.home__informBlock
+						.home__title 
+							h1 ZUMBA FiTNESS 
+						.home__text танцуй под латинскую музыку, сжигай калорий и получай заряд бодрости на всю неделю!
 
+		
+	section.form
 		.section_in 
 			.contactForm 
 				.contactForm__title Запишись на первое занятие БЕСПЛАТНО
 
 				.contactForm__block 
+<<<<<<< HEAD
 					input(type="text" placeholder="Имя")
 					input(type="text" placeholder="Телефон")
 					.contactForm__button
 						.button Записаться
 
+=======
+					input.contactForm__input(type="text" placeholder="Имя")
+					input.contactForm__input(type="text" placeholder="Телефон")
+					.contactForm__button.button
+						.button__link Записаться
+				.contactForm__checkBlock
+>>>>>>> 5fc38f573a92b404e6d9d76c288c08857ea6c0db
 					input(type="checkbox" id="check")
-					label(for="click") Чекбокс
+					label(for="click") Согласен на обработку персональных данных
 
 		.section_in 
 			.aboutUs 
