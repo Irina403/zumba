@@ -1,16 +1,20 @@
 // body{
 
-// }
-.background{
-    background-image: url(../i/fon.png);
-    background-repeat: no-repeat;
+.mainBackground{
+	background-image: url(../i/fon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: -23rem;
 }
 .base{
-    background-image: url(../i/main_bg.png);
-    background-repeat:no-repeat;
+   
 }
 .home {
-    padding-top: 29rem;
+		background-image: url(../i/main_bg.png);
+		background-repeat:no-repeat;
+		min-height: 100rem;
+		background-size: cover;
+		height: auto;
     &__title{
         margin-bottom: 5rem;
         font-size: 9rem;
@@ -25,6 +29,7 @@
         margin-bottom: 34rem;
     }
     &__informBlock{
+				padding-top: 35rem;
         width: 82rem;
     }
     &__wrapper{
@@ -37,20 +42,29 @@
     }
 }
 .contactForm{
-    padding-top: 7rem;
+    padding-top: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
     text-align: center;
+		margin-bottom: 10rem;
 
     &__title {
         font-size: 6rem;
-        color: #bf1b98;
+				color: #FF5C01;
+				// background: $gradient;
+				// -webkit-background-clip: text;
+				// -webkit-text-fill-color: transparent;
+				// color: #bf1b98;
         font-family: $font_3;
-        width: 95rem;
-        margin-bottom: 6rem;
-    }
+        width: 100rem;
+        // margin-bottom: 6rem;
+	}
+	.contactForm__title:nth-child(2){
+		color:#FF214F;
+		margin-bottom: 6rem;
+	}
     &__input{
         width: 28rem;
         border:1px solid #bf1b98;
@@ -73,4 +87,164 @@
 label{
     font-size: 1.2rem;
     color: #999999;
+}
+
+
+.aboutUs{
+    &__serviceItem{
+        color:#000;
+        font-size: 2.4rem;
+        font-family: $font_1;
+				text-transform: lowercase;
+				padding-left: 2rem;
+    }
+		&__title{
+			padding-bottom: 5rem;
+		}
+		&__textBlock{
+			width: 60rem;
+		}
+		&__text-style{
+			margin-left: -7rem;
+		}
+    &__blockList{
+				width: 50rem;
+				padding-left: 1rem;
+				margin-bottom: 4rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+		&__blockList:nth-child(2){
+			padding-left: 5rem;
+		}
+		&__blockList:nth-child(3){
+			padding-left: 5rem;
+
+		}
+    &__row{
+        display: flex;
+    }
+    &__textBlock p{
+        color: #000;
+        font-family: $font_1;
+        font-size: 1.8rem;
+				line-height: 1.667;
+    }
+		&__text{
+			width: 63rem;
+			margin-bottom: 4rem;
+			color:#000;
+			font-family: $font_1;
+      font-size: 1.8rem;
+			line-height: 1.667;
+		}
+		&__col-left{
+			left: 0;
+			position: absolute;
+		}
+		&__col-right {
+			padding-top: 7rem;
+			padding-left: 70rem;
+		}
+		&__img img{
+			max-width: 90rem;
+			width: 100%;
+		}
+		&__serviceList {
+			margin-top: 5rem;
+			padding-left: 4rem;
+		}
+		&__titleList{
+			color: #000;
+			font-size: 2.4rem;
+			font-family: $font_3;
+			margin-bottom: 9rem;
+		}
+		&__textBlock p{
+			padding-top: 3rem;
+		}
+}
+.text-uppercase{
+	text-transform: uppercase;
+}
+.blockRegister{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 14rem;
+	&__text{
+		text-align: center;
+		color:#000;
+		font-size: 2.4rem;
+		margin-bottom: 3rem;
+	}
+
+ 	span{
+		 display: block;
+		 text-transform: uppercase;
+		 font-size: 4.5rem;
+	 }
+}
+span{
+	font-family: $font_3;
+}
+.blockReasons{
+	&__row{
+		display: flex;
+	}	
+	&__num{
+		position: absolute;
+	}
+	&__item{
+		height: 30rem;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	&__item-text{
+		font-size: 1.8rem;
+		font-family: $font_1;
+		text-transform: uppercase;
+		text-align: center;
+		color:#000;
+	}
+	&__num {
+		font-size: 30rem;
+		color: rgba(255, 255, 255, 0.302);
+		font-family: $font_3;
+		text-transform: uppercase;
+	}
+}
+.titleReason-bold{
+	font-size: 1.8rem;
+	font-family: $font_3;
+}
+
+.blockVideo{
+	&__title{
+		text-align: center !important;
+		margin-bottom: 6rem;
+	}
+	&__text {
+		color:#000;
+		font-size: 3rem;
+		text-transform: uppercase;
+		font-family: $font_1;
+		text-align: center;
+	}
+}
+.blockReasons{
+	&__num-title{
+		font-size: 30rem;
+		font-family: $font_3;
+		// color: #FF5C01;
+		background: $gradient;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+
+	}
 }
