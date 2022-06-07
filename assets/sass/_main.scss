@@ -354,6 +354,10 @@ span{
 	&__text p{
 		margin-bottom: 4rem;
 	}
+	&__img img {
+		max-width: 100rem;
+		width: 100%;
+	}
 	&__img {
 		position: absolute;
 		right: 0;
@@ -401,7 +405,9 @@ span{
 		position: absolute;
 		left: 0;
 		z-index: 2;
-	
+	}
+	&__img img{
+		max-width: 100%;
 	}
 
 }
