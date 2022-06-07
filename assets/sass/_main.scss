@@ -3,7 +3,7 @@
 .mainBackground{
 	background-image: url(../i/fon.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	// background-size: cover;
 	margin-top: -23rem;
 }
 .base{
@@ -192,19 +192,26 @@ span{
 .blockReasons{
 	&__row{
 		display: flex;
-	}	
-	&__num{
-		position: absolute;
+		justify-content: space-between;
+		margin-top: 5rem;
 	}
-	&__item{
-		height: 30rem;
-		position: relative;
+	&__col{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		justify-content: flex-end;
 	}
+	&__col-right{
+		margin-top: -5rem;
+	}
+	&__item{
+		width: 41rem;
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
 	&__item-text{
+		margin-top: -17rem;
 		font-size: 1.8rem;
 		font-family: $font_1;
 		text-transform: uppercase;
@@ -217,11 +224,100 @@ span{
 		font-family: $font_3;
 		text-transform: uppercase;
 	}
+	&__title{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-right: 19rem;
+	}
+	&__num-title{
+		font-size: 30rem;
+		font-family: $font_3;
+		background: $gradient;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	&__wrapp{
+		margin-bottom: 8rem;
+		z-index: 9;
+
+	}
+	&__text{
+		font-size: 9rem;
+		font-family: $font_3;
+		background: $gradient;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	&__textBlock{
+		margin-left: 2rem;
+	}
+	&__text-style{
+		font-size: 6rem;
+		font-family: $font_3;
+		color: #000;
+	}
+	&__col-girl{
+		position: relative;
+		margin-top: -19rem;
+	}
+	&__col-girl img{
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+	}
+}
+
+.reason-1s{
+	margin-left: 60%;
+}
+.reason-2s{
+	margin-top: 20%;
+	margin-left: 40%;
+}
+.reason-3s{
+	margin-left: -80%;
+}
+.reason-4s {
+	margin-left: -40%;
+}
+.reason-5s{
+	margin-left: -30%;
+}
+.reason-6s {
+	margin-left: -20%;
 }
 .titleReason-bold{
 	font-size: 1.8rem;
 	font-family: $font_3;
 }
+.reasons-endBlock{
+	margin-top: -5%;
+	margin-bottom: 9rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+&__num{
+	font-size: 30rem;
+	color: rgba(255, 255, 255, 0.302);
+	font-family: $font_3;
+	text-transform: uppercase;
+}
+&__text{
+	margin-top: -9%;
+	margin-bottom: 4rem;
+	width: 60rem;
+	font-size: 3rem;
+	font-family: $font_3;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+}
+}
+
 
 .blockVideo{
 	&__title{
@@ -236,15 +332,77 @@ span{
 		text-align: center;
 	}
 }
-.blockReasons{
-	&__num-title{
-		font-size: 30rem;
-		font-family: $font_3;
-		// color: #FF5C01;
+
+.blockInstruction{
+	padding-bottom: 30rem;
+	&__row{
+		display: flex;
+	}
+	&__col{
+	}
+	&__title{
+		width: 40%;
+		margin-bottom: 4rem;
+	}
+	&__text{
+		width: 35%;
+		float: left;
+		font-size: 1.8rem;
+		color: #000;
+		font-family: $font_1;
+	}
+	&__text p{
+		margin-bottom: 4rem;
+	}
+	&__img {
+		position: absolute;
+		right: 0;
+	}
+}
+.priceInform{
+	color:#000;
+	width: 120rem;
+	border-radius: 5rem;
+	background-color: #fff;
+	z-index: 9;
+	padding-left: 17rem;
+	padding-right: 17rem;
+	&__num{
+		font-size: 9rem;
 		background: $gradient;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-
-
+	}
+	&__sell{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__title{
+		text-align: center !important;
+	}
+	&__text{
+		width: 36rem;
+		text-transform: uppercase;
 	}
 }
+
+.priceList {
+	width: 50rem;
+	margin: auto;
+}
+.blockPrice{
+	padding-bottom: 80rem;
+	&__bg{
+		position: relative;
+		z-index: 9;
+	} 
+	&__img{
+		position: absolute;
+		left: 0;
+		z-index: 2;
+	
+	}
+
+}
+

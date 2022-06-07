@@ -73,83 +73,121 @@ block content_block
 				.blockReasons
 					.blockReasons__title 	
 						.blockReasons__num-title 8
-						.blockReasons__text ПРИЧИН <br> ЗАНЯТЬСЯ ЗУМБОЙ
-
-					.blockReasons__row 
-						.blockReasons__col 
-							ul.blockReasons__list
-								-for(i=0; i<3; i++)
-									-titleReason = ['Занятия подходят абсолютно всем, и для этого не нужен спортивный и танцевальный опыт', '<span class="titleReason-bold"> Ваше тело станет стройным и подтянутым</span> Активные упражнения улучшают процессы метаболизма и прорабатывают все группы мышц', 'занятия в группах по 5-20 человек/индивидуальные уроки в любом районе г.москвы']
-									-reasonsNum = ['1','2','3']
-									li.blockReasons__item 
-										p.blockReasons__num!=reasonsNum[i]
-										p.blockReasons__item-text!=titleReason[i]
-
-						.blockReasons__col 
+						.blockReasons__textBlock
+							.blockReasons__text ПРИЧИН 
+							.blockReasons__text-style ЗАНЯТЬСЯ ЗУМБОЙ
+							
+					.blockReasons__col
+						.blockReasons__col-girl 
 							img(src="i/girl.png", alt="")
-						.blockReasons__col 
-							ul.blockReasons__list
-								-for(i=0; i<4; i++)
-									-titleReason = ['научитесь ритмочно двигаться и освоите элементы различных танцев','<span class="titleReason-bold">эмоциональная разгрузка</span>выплесните эмоции, накопившиеся в течение дня','зумба аэробика поможет разогреть себя и избавиться от скованности','<span class="titleReason-bold">отличная физическая нагрузка</span>сжигание от 500 до 700 калорий за 1 час']
-									-reasonsNum = ['4','5','6','7']
-									li.blockReasons__item 
-										p.blockReasons__num!=reasonsNum[i]
-										p.blockReasons__item-text!=titleReason[i]
+						
+						.blockReasons__row 
+							.blockReasons__col
+								.blockReasons__list
+									.blockReasons__item.reason-1s
+										.blockReasons__num 1
+										.blockReasons__item-text Занятия подходят абсолютно всем, <br> и для этого не нужен спортивный и танцевальный опыт
+									.blockReasons__item.reason-1s
+										.blockReasons__num 2
+										.blockReasons__item-text <span> Ваше тело станет стройным и подтянутым </span> <br>Активные упражнения улучшают <br> процессы метаболизма <br>и прорабатывают <br>все группы мышц
+									.blockReasons__item.reason-2s
+										.blockReasons__num 3
+										.blockReasons__item-text Занятия <br>в группах 5-20 человек /<br>индивидуальные уроки <br> в любом районе г. Москвы
+									
 
-					.blockReasons__end 
-						.blockReasons__num 8
-						.blockReasons__item-endText Первое занятие Бесплатно Попробовать очень просто! 
-						.blockRegister__button.button
+							.blockReasons__col.blockReasons__col-right
+								.blockReasons__list
+									.blockReasons__item.reason-3s
+										.blockReasons__num 4
+										.blockReasons__item-text Научитесь ритмично двигаться <br> и освоите элементы  <br> различных танцев
+									.blockReasons__item.reason-4s 
+										.blockReasons__num 5
+										.blockReasons__item-text <span> Эмоциональная разгрузка </span> <br> выплесните эмоции, <br> накопившиеся <br> в течение дня
+									.blockReasons__item.reason-5s  
+										.blockReasons__num 6
+										.blockReasons__item-text Зумба аэробика <br>поможет разогреть себя <br>и избавиться <br>от скованности
+									.blockReasons__item.reason-6s 
+										.blockReasons__num 7
+										.blockReasons__item-text <span> Отличная физическая <br> нагрузка </span> <br> сжигание <br> от 500 до 700 калорий <br> за 1 час
+					
+						//- 		-for(i=0; i<3; i++)
+						//- 			-titleReason = ['Занятия подходят абсолютно всем, <br> и для этого не нужен спортивный и танцевальный опыт', '<span class="titleReason-bold"> Ваше тело станет стройным и подтянутым</span> <br> Активные упражнения улучшают процессы метаболизма и прорабатывают все группы мышц', 'занятия <br> в группах по 5-20 человек/индивидуальные уроки в любом районе г.москвы']
+						//- 			-reasonsNum = ['1','2','3']
+						//- 			.blockReasons__box
+						//- 				li.blockReasons__item 
+						//- 					p.blockReasons__num!=reasonsNum[i]
+						//- 					.blockReasons__wrapp
+						//- 						p.blockReasons__item-text!=titleReason[i]
+
+						//- .blockReasons__col.blockReasons__col-girl 
+						//- 	img(src="i/girl.png", alt="")
+						//- .blockReasons__col 
+						//- 	ul.blockReasons__list
+						//- 		-for(i=0; i<4; i++)
+						//- 			-titleReason = ['научитесь ритмочно двигаться и освоите элементы различных танцев','<span class="titleReason-bold">эмоциональная разгрузка</span> <br> выплесните эмоции, накопившиеся<br> в течение дня','зумба аэробика <br> поможет разогреть себя <br> и избавиться от скованности','<span class="titleReason-bold">отличная физическая <br> нагрузка <br></span>сжигание <br> от 500 до 700 калорий <br> за 1 час']
+						//- 			-reasonsNum = ['4','5','6','7']
+						//- 			li.blockReasons__item 
+						//- 				p.blockReasons__num!=reasonsNum[i]
+						//- 				.blockReasons__wrapp
+						//- 					p.blockReasons__item-text!=titleReason[i]
+
+					.blockReasons__end.reasons-endBlock
+						.reasons-endBlock__num 8
+						.reasons-endBlock__text Первое занятие Бесплатно Попробовать очень просто! 
+						.reasons-endBlock__button.button
 							.button__link Попробовать
 
 			.section_in 
 				.blockInstruction
 					.blockInstruction__row
 						.blockInstruction__col
-							.blockInstruction__title ОБ ИНСТРУКТОРЕ-ПРЕПОДАВАТЕЛЕ
+							.blockInstruction__title.titleBlock ОБ ИНСТРУКТОРЕ-ПРЕПОДАВАТЕЛЕ
 							.blockInstruction__text 
-								p Привет! Я Марина Хоролова – являюсь преподавателем танцев по направлению Zumba Fitness. 
-								p Профессиональная танцовщица, артистка и хореограф со стажем более 10 лет.
+								p Привет! Я <span> Марина Хоролова </span> – являюсь преподавателем танцев по направлению Zumba Fitness. 
+								p Профессиональная танцовщица, артистка  и хореограф со стажем более 10 лет.
 								p Была призером, лауреатом десятков танцевальных конкурсов и фестивалей. 
 								p Победителем районных, городских и областных соревнований. На регулярной основе участвую в благотворительных постановках и организации городских концертов.
-								p Помимо всего прочего, опыт только Зумба-фитнессом у меня не ограничивается. Занимаюсь постановкой номеров от стрип-пластики и Frame Up Strip и до свадебного вальса жениха и невесты. Да-да и такое тоже есть.
+								p Помимо всего прочего, опыт только Зумба-фитнессом у меня не ограничивается. Занимаюсь постановкой номеров от стрип-пластики и Frame Up Strip и до свадебного вальса жениха и невесты. <span>Да-да и такое тоже есть.</span>
 								p Свои занятия выстраиваю на подаче материала отдельными блоками от простого к сложному, чтобы даже новичок смог быстро освоить новые связки и упражнения. 
-								p Жду вас на первой Бесплатной тренировке!
-							.blockInstruction__button.button
-								.button__link Хочу
+								p <span> Жду вас на первой Бесплатной тренировке! </span>
+						
 						.blockInsruction__col
 							.blockInstruction__img 
 								img(src="i/about.png", alt="")
+					.blockInstruction__button.button
+						.button__link Хочу
 
+			.section_in
+				.blockPrice 
+					.blockPrice__row
+						.blockPrice__img 
+							img(src="i/dance-img.png", alt="")
+						.blockPrice__bg 
+							.blockPrice__priceInform.priceInform
+								.priceInform__title.titleBlock ЦЕНЫ НА ЗАНЯТИЯ В МОСКВЕ
+								.priceInform__sell 
+									.priceInform__num -10%
+									.priceInform__text При оформлении абонемента сразу после пробного занятия
+								.priceInform__sell 
+									.priceInform__num -15%
+									.priceInform__text на любой абонемент, если приведешь друга (подругу)
 
-			.blockPrice 
-				.blockPrice__row
-					.blockPrice__bg 
-						.blockPrice__priceInform.priceInform
-							.priceInform__title ЦЕНЫ НА ЗАНЯТИЯ В МОСКВЕ
-							.priceInform__sell 
-								.priceInform__num -10%
-								.priceInform__text При оформлении абонемента сразу после пробного занятия
-							.priceInform__sell 
-								.priceInform__num -15%
-								.priceInform__text на любой абонемент, если приведешь друга (подругу)
+								ul.priceList
+									li.priceList__item 	Пробное занятие . . . . . . . . . . . . . . . . . .<span>БЕСПЛАТНО</span>
+									li.priceList__item 	1 занятие  . . . . . . . . . . . . . . . . . . . . . . . . . . .<span>600 ₽</span>
+									li.priceList__item 	Абонемент 4 занятия . . . . . . . . . . . . . <span>2 100 ₽</span>
+									li.priceList__item 	Абонемент 8 занятий  . . . . . . . . . . . . . <span>4 000 ₽</span>
+									li.priceList__item 	Абонемент 15 занятий . . . . . . . . . . . . .<span>7 000 ₽</span>
+									li.priceList__item 	Абонемент 30 занятий . . . . . . . . . . . . <span>13 500 ₽</span>
 
-							ul.priceList 
-								li.priceList__item 	Пробное занятие . . . . . . . . . . . . . . . . . .<span>БЕСПЛАТНО</span>
-								li.priceList__item 	1 занятие  . . . . . . . . . . . . . . . . . . . . <span>500 ₽</span>
-								li.priceList__item 	Абонемент 4 занятия . . . . . . . . . . . . . . .  <span>2 100 ₽</span>
-								li.priceList__item 	Абонемент 8 занятий  . . . . . . . . . . . . . . . <span>4 000 ₽</span>
-								li.priceList__item 	Абонемент 15 занятий . . . . . . . . . . . . . . . <span>7 000 ₽</span>
-								li.priceList__item 	Абонемент 30 занятий . . . . . . . . . . . . . . . <span>13 500 ₽</span>
+									.priceList__note *Бронь места в зале осуществляется после оставления заявки или записи по телефону								
 
-								.priceList__note *Бронь места в зале осуществляется после оставления заявки или записи по телефону								
+									li.priceList__item 	Индивидуальное занятие разовое, 1 час . . . . . . .<span>800 ₽</span>
+									li.priceList__item 	3 Индивидуальных занятия по 1 часу . . . . . . . . <span>5 250 ₽</span>
+									li.priceList__item 	5 Индивидуальных занятий по 1 часу . . . . . . . . <span>8 500 ₽</span>
+									li.priceList__item 	10 Индивидуальных занятий по 1 часу . . . . . . . .<span>16 500 ₽</span>
 
-								li.priceList__item 	Индивидуальное занятие разовое, 1 час . . . . . . .<span>800 ₽</span>
-								li.priceList__item 	3 Индивидуальных занятия по 1 часу . . . . . . . . <span>5 250 ₽</span>
-								li.priceList__item 	5 Индивидуальных занятий по 1 часу . . . . . . . . <span>8 500 ₽</span>
-								li.priceList__item 	10 Индивидуальных занятий по 1 часу . . . . . . . .<span>16 500 ₽</span>
+									.priceList__note (Место и стоимость аренды зала согласовывается с преподавателем, и не входит в стоимость занятия)
 
-								.priceList__note (Место и стоимость аренды зала согласовывается с преподавателем, и не входит в стоимость занятия)
-
-								.priceList__button.button
-									.button__link Записаться
+									.priceList__button.button
+										.button__link Записаться
