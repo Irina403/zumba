@@ -92,8 +92,8 @@
 	.navbar-container input[type="checkbox"] {
 	  position: absolute;
 	  display: block;
-	  height: 3.2rem;
-	  width: 3rem;
+	  height: 32px;
+	  width: 30px;
 	  top: 2rem;
 	  left: 2rem;
 	  z-index: 5;
@@ -159,8 +159,11 @@
 	}
 	.menu-items a {
 		color:#000;
+		margin-left: 0rem;
 	}
-  
+  .menu-items li{
+	margin-left: 0rem;
+  }
 
 	.navbar-container input[type="checkbox"]:checked ~ .menu-items {
 	  transform: translateX(0);
