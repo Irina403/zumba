@@ -1,14 +1,60 @@
 .footer {
-	width: 100%;
-	min-height: $footer;
-	flex: 0 0 auto;
-	font-size: 1rem;
-
-	will-change: transform;
-
-	@include bp($point_2) {
-		height: $footer_mob;
+	&__row{
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
+	&__title{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 8rem;
+	}
+	&__tel{
+		text-decoration: none;
+		color: #000;
+		font-family: $font_3;
+		font-size: 2.4rem;
+
+	}
+	&__information {
+		color: #000;
+	}
+	&__address{
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		font-size: 2.4rem;
+	}
+
+	&__form{
+		display: flex;
+		flex-direction: column;
+	}
+	&__input{
+		margin-bottom:2rem;
+	}
+	.contactForm__button{
+		color: #fff;
+	}
+	&__copyright{
+		color: #000;
+		text-align: center;
+		&-text{
+			font-size: 1.2rem;
+			color: #000;
+		}
+	}
+
+	
+	// width: 100%;
+	// min-height: $footer;
+	// flex: 0 0 auto;
+	// font-size: 1rem;
+
+	// will-change: transform;
+
+	// @include bp($point_2) {
+	// 	height: $footer_mob;
+	// }
 }
 
 

@@ -1,18 +1,19 @@
 // body{
-
-.mainBackground{
+.wrapper{
 	background-image: url(../i/fon.png);
 	background-repeat: no-repeat;
-	// background-size: cover;
-	margin-top: -23rem;
+	background-size: cover;
 }
+// .mainBackground{
+
+// }
 .base{
    
 }
 .home {
 		background-image: url(../i/main_bg.png);
 		background-repeat:no-repeat;
-		min-height: 100rem;
+		min-height: 110rem;
 		background-size: cover;
 		height: auto;
     &__title{
@@ -42,7 +43,6 @@
     }
 }
 .contactForm{
-    padding-top: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,10 +67,11 @@
 	}
     &__input{
         width: 28rem;
-        border:1px solid #bf1b98;
+        border:1px solid #FF5C01;
         border-radius: 6px;
         height: 7rem;
         text-align: center;
+				background: transparent;
     }
     &__block{
         display: flex;
@@ -79,15 +80,19 @@
         margin-right: 4rem;
     }
     &__checkBlock{
-        display: flex;
-        margin-top: 1rem;
+			padding-top: 1rem;
+			display: flex;
+			align-items: center;
+			margin-top: 1rem;
     }
 
 } 
 label{
     font-size: 1.2rem;
-    color: #999999;
+    color: rgb(153, 153, 153);
+		font-family: $font_1;
 }
+
 
 
 .aboutUs{
@@ -193,7 +198,7 @@ span{
 	&__row{
 		display: flex;
 		justify-content: space-between;
-		margin-top: 5rem;
+		margin-top: 10rem;
 	}
 	&__col{
 		display: flex;
@@ -209,6 +214,7 @@ span{
 		align-items: center;
 		flex-direction: column;
 	}
+
 
 	&__item-text{
 		margin-top: -17rem;
@@ -259,7 +265,7 @@ span{
 	}
 	&__col-girl{
 		position: relative;
-		margin-top: -19rem;
+		margin-top: -20rem;
 	}
 	&__col-girl img{
 		left: 0;
@@ -278,9 +284,11 @@ span{
 	margin-left: 40%;
 }
 .reason-3s{
+	margin-top: -2rem;
 	margin-left: -80%;
 }
 .reason-4s {
+	margin-top: -4rem;
 	margin-left: -40%;
 }
 .reason-5s{
@@ -325,48 +333,53 @@ span{
 		margin-bottom: 6rem;
 	}
 	&__text {
+		margin-bottom: 6rem;
 		color:#000;
 		font-size: 3rem;
 		text-transform: uppercase;
 		font-family: $font_1;
 		text-align: center;
 	}
+	&__video {
+		text-align: center;
+	}
 }
 
 .blockInstruction{
-	padding-bottom: 30rem;
+	padding-bottom: 40rem;
 	&__row{
 		display: flex;
 	}
 	&__col{
 	}
 	&__title{
-		width: 40%;
 		margin-bottom: 4rem;
 	}
+
 	&__text{
-		width: 35%;
-		float: left;
+		margin-bottom: 4rem;
+		width: 800px;
 		font-size: 1.8rem;
 		color: #000;
 		font-family: $font_1;
-	}
-	&__text p{
-		margin-bottom: 4rem;
+		// text-align: justify;
+		margin: 20px auto;
 	}
 	&__img {
-		position: absolute;
-		right: 0;
+		float: right;
+		shape-outside: url(../i/about.png);
+		clip-path: ellipse(50%); 
+		}
 	}
-}
+
 .priceInform{
+	height: 118.5rem;
+	padding-top: 6.5rem;
 	color:#000;
-	width: 120rem;
+	width: 98rem;
 	border-radius: 5rem;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.85);
 	z-index: 9;
-	padding-left: 17rem;
-	padding-right: 17rem;
 	&__num{
 		font-size: 9rem;
 		background: $gradient;
@@ -388,12 +401,32 @@ span{
 }
 
 .priceList {
-	width: 50rem;
+	padding-left: 18rem;
 	margin: auto;
+	&__item{
+		margin-bottom: 3rem;
+		text-transform: uppercase;
+	}
+	&__note{
+		width: 58%;
+		font-size: 1.4rem;
+		margin-bottom: 4rem;
+	}
+	&__button{
+		margin-top: 4rem;
+		margin-left: 15rem;
+		color: #fff;
+	}
 }
 .blockPrice{
-	padding-bottom: 80rem;
+	padding-bottom: 10rem;
 	&__bg{
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		margin-right: 18rem;
+		top: -8rem;
+		// position: absolute;
 		position: relative;
 		z-index: 9;
 	} 
@@ -401,7 +434,9 @@ span{
 		position: absolute;
 		left: 0;
 		z-index: 2;
-	
+	}
+	&__img img{
+	max-width: 100%;
 	}
 
 }
