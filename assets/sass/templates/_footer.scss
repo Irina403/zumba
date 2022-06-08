@@ -3,11 +3,20 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@include bp ($point_1){
+		  flex-direction: column;
+		}
+		@include bp ($point_3){
+		  align-items: flex-start;
+		}
 	}
 	&__title{
 		display: flex;
 		justify-content: center;
 		margin-bottom: 8rem;
+		@include bp ($point_1){
+		  margin-bottom: 1rem;
+		}
 	}
 	&__tel{
 		text-decoration: none;
@@ -18,16 +27,34 @@
 	}
 	&__information {
 		color: #000;
+		@include bp ($point_1){
+		  display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content:center;
+			@include bp ($point_3){
+				align-items: flex-start;
+			}
+		}
 	}
 	&__address{
 		margin-top: 3rem;
 		margin-bottom: 3rem;
 		font-size: 2.4rem;
+		@include bp ($point_1){
+			text-align: center;
+		}
+		@include bp ($point_3){
+		  text-align: left;
+		}
 	}
 
 	&__form{
 		display: flex;
 		flex-direction: column;
+		@include bp ($point_1){
+			margin-bottom: 2rem;
+		}
 	}
 	&__input{
 		margin-bottom:2rem;
@@ -36,25 +63,25 @@
 		color: #fff;
 	}
 	&__copyright{
+		margin-top: 4rem;
 		color: #000;
 		text-align: center;
 		&-text{
 			font-size: 1.2rem;
-			color: #000;
+			color: rgb(155, 155, 155);
+			text-align: center;
 		}
 	}
+		&__imgMap img{
+			width: 77rem;
+			@include bp ($point_3){
+				width: 100%;
+			}
 
-	
-	// width: 100%;
-	// min-height: $footer;
-	// flex: 0 0 auto;
-	// font-size: 1rem;
+		} 
+	}
 
-	// will-change: transform;
 
-	// @include bp($point_2) {
-	// 	height: $footer_mob;
-	// }
-}
+
 
 

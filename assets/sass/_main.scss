@@ -21,6 +21,9 @@
         font-size: 9rem;
         font-family: $font_2;
         text-align: center;
+				@include bp ($point_3){
+					font-size: 7.2rem
+				}
 		
     }
     &__text{
@@ -28,10 +31,17 @@
         font-size: 3.6rem;
         font-family: $font_1;
         margin-bottom: 34rem;
+				@include bp ($point_3){
+					font-size: 2.8rem;
+				}
+
     }
     &__informBlock{
 				padding-top: 35rem;
         width: 82rem;
+				@include bp ($point_3){
+					width: 100%;
+				}
     }
     &__wrapper{
         width: 100%;
@@ -59,6 +69,12 @@
 				// color: #bf1b98;
         font-family: $font_3;
         width: 100rem;
+				@include bp ($point_1){
+					width: 100%;
+				}
+				@include bp ($point_3){
+					font-size: 4.2rem
+				}
         // margin-bottom: 6rem;
 	}
 	.contactForm__title:nth-child(2){
@@ -75,9 +91,18 @@
     }
     &__block{
         display: flex;
+				@include bp ($point_1){
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+				}
     }
     &__input{
         margin-right: 4rem;
+				@include bp ($point_1){
+					margin-right: 0rem;
+					margin-bottom: 2rem;
+				}
     }
     &__checkBlock{
 			padding-top: 1rem;
@@ -108,9 +133,17 @@ label{
 		}
 		&__textBlock{
 			width: 60rem;
+			@include bp($point_3){
+				width: 100%;
+
+			}
+		
 		}
 		&__text-style{
 			margin-left: -7rem;
+			@include bp($point_2){
+				margin-left: 0rem;
+			}
 		}
     &__blockList{
 				width: 50rem;
@@ -121,13 +154,22 @@ label{
     }
 		&__blockList:nth-child(2){
 			padding-left: 5rem;
+			@include bp($point_2){
+				padding-left: 0rem;
+			}
 		}
 		&__blockList:nth-child(3){
 			padding-left: 5rem;
+			@include bp($point_2){
+				padding-left: 0rem;
+			}
 
 		}
     &__row{
         display: flex;
+				@include bp($point_2){
+					flex-direction: column;
+				}
     }
     &__textBlock p{
         color: #000;
@@ -142,6 +184,10 @@ label{
 			font-family: $font_1;
       font-size: 1.8rem;
 			line-height: 1.667;
+			@include bp($point_3){
+				width: 100%;
+
+			}
 		}
 		&__col-left{
 			left: 0;
@@ -150,14 +196,23 @@ label{
 		&__col-right {
 			padding-top: 7rem;
 			padding-left: 70rem;
+			@include bp($point_2){
+				padding-left: 0rem;
+			}
 		}
 		&__img img{
 			max-width: 90rem;
 			width: 100%;
+			@include bp($point_2){
+				display: none;
+			}
 		}
 		&__serviceList {
 			margin-top: 5rem;
 			padding-left: 4rem;
+			@include bp($point_2){
+				padding-left: 0rem;
+			}
 		}
 		&__titleList{
 			color: #000;
@@ -178,6 +233,9 @@ label{
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 14rem;
+	// @include bp($point_2){
+	// 	padding-left: 0rem;
+	// }
 	&__text{
 		text-align: center;
 		color:#000;
@@ -199,6 +257,10 @@ span{
 		display: flex;
 		justify-content: space-between;
 		margin-top: 10rem;
+		@include bp ($point_1){
+			flex-direction: column;
+			margin-top: 0rem;
+		}
 	}
 	&__col{
 		display: flex;
@@ -213,8 +275,8 @@ span{
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-	}
 
+	}
 
 	&__item-text{
 		margin-top: -17rem;
@@ -235,6 +297,10 @@ span{
 		align-items: center;
 		justify-content: flex-end;
 		margin-right: 19rem;
+		@include bp ($point_3){
+       margin-right: 0rem;
+			 justify-content: center;
+		}
 	}
 	&__num-title{
 		font-size: 30rem;
@@ -242,6 +308,9 @@ span{
 		background: $gradient;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		@include bp ($point_3){
+			font-size: 20rem;
+		}
 	}
 	&__wrapp{
 		margin-bottom: 8rem;
@@ -254,18 +323,28 @@ span{
 		background: $gradient;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		@include bp ($point_3){
+			font-size: 4.2rem
+		}
 	}
 	&__textBlock{
 		margin-left: 2rem;
+	
 	}
 	&__text-style{
 		font-size: 6rem;
 		font-family: $font_3;
 		color: #000;
+		@include bp ($point_3){
+			font-size: 3.2rem;
+		}
 	}
 	&__col-girl{
 		position: relative;
 		margin-top: -20rem;
+		@include bp ($point_1){
+			display: none;
+		}
 	}
 	&__col-girl img{
 		left: 0;
@@ -278,24 +357,55 @@ span{
 
 .reason-1s{
 	margin-left: 60%;
+	@include bp ($point_1){
+		margin-left: 0%;
+	}
 }
 .reason-2s{
 	margin-top: 20%;
 	margin-left: 40%;
+	@include bp ($point_1400){
+		margin-left: 15%;
+	}
+	@include bp ($point_1){
+		margin-left: 0%;
+		margin-top: 0%;
+	}
 }
 .reason-3s{
 	margin-top: -2rem;
 	margin-left: -80%;
+	@include bp ($point_1){
+		margin-left: 0%;
+		margin-top: 0%;
+	}
 }
 .reason-4s {
 	margin-top: -4rem;
 	margin-left: -40%;
+	@include bp ($point_1){
+		margin-left: 0%;
+		margin-top: 0%;
+	}
 }
 .reason-5s{
 	margin-left: -30%;
+	@include bp ($point_1400){
+		margin-left: -15%;
+	}
+	@include bp ($point_1){
+		margin-left: 0%;
+	}
+
 }
 .reason-6s {
 	margin-left: -20%;
+	@include bp ($point_1400){
+		margin-left: 0%;
+	}
+	@include bp ($point_1){
+		margin-left: 0%;
+	}
 }
 .titleReason-bold{
 	font-size: 1.8rem;
@@ -308,6 +418,26 @@ span{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	@include bp ($point){
+		margin-top: 5%;
+	}
+	@include bp ($point_0){
+		margin-top: 15%;
+	}
+	@include bp ($point_1400){
+		margin-top: 20%;
+	}
+	@include bp ($point_1){
+		margin-left: 11%;
+		margin-bottom: 32rem;
+		margin-top: 0%;
+		// align-items: flex-start;
+		// justify-content: flex-start;
+		margin-bottom: 1rem;
+	}
+	@include bp ($point_3){
+      margin-left: 0%;
+	}
 &__num{
 	font-size: 30rem;
 	color: rgba(255, 255, 255, 0.302);
@@ -323,6 +453,12 @@ span{
 	text-transform: uppercase;
 	text-align: center;
 	color: #000;
+	// @include bp ($point_1){
+	// 	text-align: left;
+	// }
+	@include bp ($point_3){
+		width: 100%;
+}
 }
 }
 
@@ -343,32 +479,60 @@ span{
 	&__video {
 		text-align: center;
 	}
+	&__video img{
+		max-width: 100%;
+	}
 }
 
 .blockInstruction{
-	padding-bottom: 40rem;
+	padding-bottom: 21rem;
 	&__row{
 		display: flex;
 	}
 	&__col{
+		padding-left: 20rem;
+		@include bp ($point_1){
+			padding-left: 0rem;
+		}
 	}
 	&__title{
 		margin-bottom: 4rem;
 	}
 
-	&__text{
+	&__box{
 		margin-bottom: 4rem;
-		width: 800px;
 		font-size: 1.8rem;
 		color: #000;
 		font-family: $font_1;
-		// text-align: justify;
 		margin: 20px auto;
+	}
+
+	&__text p{
+		width: 38%;
+		margin-bottom: 5rem;
+		@include bp ($point_1){
+			width: 100%;
+		}
+
 	}
 	&__img {
 		float: right;
-		shape-outside: url(../i/about.png);
+		shape-outside: circle(50%);
+		@include bp ($point_1){
+			display: none;
 		}
+		// shape-outside: url(../i/about.png);
+		}
+		&__img img{
+			position: absolute;
+			right: 0;
+			width: 110rem;
+
+		}
+	&__button{
+		margin-left: 12.5%;
+	}
+
 	}
 
 .priceInform{
@@ -379,6 +543,10 @@ span{
 	border-radius: 5rem;
 	background-color: rgba(255, 255, 255, 0.85);
 	z-index: 9;
+	@include bp ($point_3){
+		width: 100%;
+		padding-top: 2.5rem;
+	}
 	&__num{
 		font-size: 9rem;
 		background: $gradient;
@@ -402,6 +570,9 @@ span{
 .priceList {
 	padding-left: 18rem;
 	margin: auto;
+	@include bp ($point_3){
+		padding-left: 1rem;
+	}
 	&__item{
 		margin-bottom: 3rem;
 		text-transform: uppercase;
@@ -415,6 +586,9 @@ span{
 		margin-top: 4rem;
 		margin-left: 15rem;
 		color: #fff;
+		@include bp ($point_1){
+			margin-left: 0rem;
+		}
 	}
 }
 .blockPrice{
@@ -428,6 +602,9 @@ span{
 		// position: absolute;
 		position: relative;
 		z-index: 9;
+		@include bp ($point_3){
+			margin-right: 0rem;
+		}
 	} 
 	&__img{
 		position: absolute;
@@ -435,7 +612,11 @@ span{
 		z-index: 2;
 	}
 	&__img img{
-	max-width: 100%;
+		width: 153.6rem;
+		@include bp ($point_1){
+			width: 100%;
+
+		}
 	}
 
 }
