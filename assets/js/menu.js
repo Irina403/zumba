@@ -107,20 +107,29 @@
 // 	}
 // });
 
-var x = document.getElementById("contain");
+// var x = document.getElementById("contain");
 
-x.addEventListener("click", myFunction);
+// x.addEventListener("click", myFunction);
 
-function myFunction() {
-  var element = document.getElementById("nav");
-  element.classList.toggle("open");
+// function myFunction() {
+//   var element = document.getElementById("nav");
+//   element.classList.toggle("open");
 
-  x.classList.toggle("change");
-}
+//   x.classList.toggle("change");
+// }
 
-$(function () {
-	$(document).scroll(function () {
-		var $nav = $(".fixed-top");
-		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-	});
-});
+// $(function () {
+// 	$(document).scroll(function () {
+// 		var $nav = $(".fixed-top");
+// 		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+// 	});
+// });
+
+(function(){
+    var burger = document.querySelector('.burger-container'),
+        header = document.querySelector('.header');
+    
+    burger.onclick = function() {
+        header.classList.toggle('menu-opened');
+    }
+}());
