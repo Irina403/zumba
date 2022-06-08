@@ -118,18 +118,10 @@
 //   x.classList.toggle("change");
 // }
 
-// $(function () {
-// 	$(document).scroll(function () {
-// 		var $nav = $(".fixed-top");
-// 		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-// 	});
-// });
+$(function () {
+	$(document).scroll(function () {
+		var $nav = $(".fixed-top");
+		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+});
 
-(function(){
-    var burger = document.querySelector('.burger-container'),
-        header = document.querySelector('.header');
-    
-    burger.onclick = function() {
-        header.classList.toggle('menu-opened');
-    }
-}());

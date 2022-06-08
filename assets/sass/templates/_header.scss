@@ -1,80 +1,4 @@
-//------------------------------------------------------------layout
-.header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: $header;
-	width: 100%;
-	font-size: 1rem;
-	will-change: transform;
-	z-index: 999;
-	// @include bp($point_2) {
-	// 	height: $header_mob;
-	// }
-	&__block{
-		width: 100%;
-		padding-top: 4rem;
-		// position: absolute;
-		z-index: 9;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-}
-.nav {
-	&__list{
-	
-		display: flex;
-	}
-	a{
-		color: #fff;
-		text-decoration: none;
-		font-size: 1.6rem;
-		font-family: $font_1;
-		margin-left: 4.5rem;
-	}
-}
-.contactHead{
-	&__tel a{
-		font-size: 1.8rem;
-		color:#fff;
-		font-family: $font_1;
-	}
-	&__info{
-		font-size: 1.4rem;
-		color: #999999;;
-		font-family: $font_1;
 
-	}
-}
-
-// .nav-comp{
-// 	display: none;
-// }
-// .nav-mobile{
-// 	padding-top: 2rem;
-// 	padding-bottom: 2rem;
-// 	&__list {
-	
-// 		padding: 2rem;
-// 		display: flex;
-// 		flex-direction: column;
-// 		align-items: center;
-// 		justify-content: center;
-// 	}
-// 	&__item {
-// 		margin-bottom: 1rem;
-// 	}
-// 	&__item a{
-// 		font-size: 1.8rem;
-// 		color: #000;
-// 		text-decoration: none;
-
-// 	}
-// }
-
-
-//---------------
 
   /* desktop mode............/// */
   
@@ -84,25 +8,37 @@
   }
   
   .navbar {
+	// padding-top: 2rem;
 	// box-shadow: 0px 5px 10px 0px #aaa;
 	position: fixed;
 	width: 100%;
 	background: transparant;
 	color: #fff;
 	opacity: 0.85;
-	height: 50px;
 	z-index: 12;
   }
-  
+.tel a{
+	font-size: 1.8rem;
+	color:#fff;
+	font-family: $font_2;
+	text-decoration: none;
+}
+.info{
+	font-size: 1.4rem;
+	color: #999999;;
+	font-family: $font_1;
+	z-index: 1;
+
+}
   .navbar-container {
 	display: flex;
-	justify-content: space-between;
-	height: 64px;
+	justify-content: space-around;
+	height: 6.4rem;
 	align-items: center;
   }
-  
+
   .menu-items {
-	order: 2;
+	// order: 2;
 	display: flex;
   }
   
@@ -114,29 +50,32 @@
   }
   
   .menu-items a {
-	text-decoration: none;
 	color: #fff;
-	font-weight: 500;
+	text-decoration: none;
+	font-size: 1.6rem;
+	font-family: $font_1;
+	margin-left: 4.5rem;
 	transition: color 0.3s ease-in-out;
   }
   
   .menu-items a:hover {
-	color: #117964;
+	color: #FF5C01;
 	transition: color 0.3s ease-in-out;
   }
   
-  .logo {
-	order: 1;
-	font-size: 2.3rem;
-	margin-bottom: 0.5rem;
-  }
-  
+
   /* ............//// Showcase styling ////......... */
   
 
-  @media (max-width: 768px) {
+  @media (max-width: 1020px) {
+	.contact-box{
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		z-index: -1;
+	}
 	.navbar {
-	  opacity: 0.95;
+	  opacity: 1;
 	}
   
 	.navbar-container input[type="checkbox"],
@@ -147,16 +86,16 @@
 	.navbar-container {
 	  display: block;
 	  position: relative;
-	  height: 64px;
+	  height: 6.4rem;
 	}
   
 	.navbar-container input[type="checkbox"] {
 	  position: absolute;
 	  display: block;
-	  height: 32px;
-	  width: 30px;
-	  top: 20px;
-	  left: 20px;
+	  height: 3.2rem;
+	  width: 3rem;
+	  top: 2rem;
+	  left: 2rem;
 	  z-index: 5;
 	  opacity: 0;
 	}
@@ -167,11 +106,12 @@
 	  width: 35px;
 	  position: absolute;
 	  top: 17px;
-	  left: 20px;
+	  left: 5px;
 	  z-index: 2;
 	  display: flex;
 	  flex-direction: column;
 	  justify-content: space-between;
+	  
 	}
   
 	.navbar-container .hamburger-lines .line {
@@ -179,7 +119,7 @@
 	  height: 4px;
 	  width: 100%;
 	  border-radius: 10px;
-	  background: #333;
+	  background: $gradient;
 	}
   
 	.navbar-container .hamburger-lines .line1 {
@@ -199,6 +139,7 @@
 	.navbar .menu-items {
 	  padding-top: 100px;
 	  background: #fff;
+	  color:#000;
 	  height: 100vh;
 	  max-width: 300px;
 	  transform: translate(-150%);
@@ -214,15 +155,13 @@
 	  margin-bottom: 1.5rem;
 	  font-size: 1.3rem;
 	  font-weight: 500;
+	  color:#000;
+	}
+	.menu-items a {
+		color:#000;
 	}
   
-	.logo {
-	  position: absolute;
-	  top: 5px;
-	  right: 15px;
-	  font-size: 2rem;
-	}
-  
+
 	.navbar-container input[type="checkbox"]:checked ~ .menu-items {
 	  transform: translateX(0);
 	}
