@@ -1,44 +1,65 @@
-header.header.fixed-top 
-	.section_in
-		.header__block.nav-comp
-			.header__nav.nav 
-				ul.nav__list
-					each item in ['О нас', 'Видео','Преимущества','О преподавателе','Отзывы','Цены','Контакты']
-						li 
-							a(href="#")=item 
+//- header.header.fixed-top 
+//- 	.section_in
+//- 		.header__block.nav-comp
+//- 			.header__nav.nav 
+//- 				ul.nav__list
+//- 					each item in ['О нас', 'Видео','Преимущества','О преподавателе','Отзывы','Цены','Контакты']
+//- 						li 
+//- 							a(href="#")=item 
 
-			.header__contact.contactHead 
-				.contactHead__tel 
-					a(href="#") +7 (480) 000 00 00
-				.contactHead__info Москва, Дербеневская улица, 11
+//- 			.header__contact.contactHead 
+//- 				.contactHead__tel 
+//- 					a(href="#") +7 (480) 000 00 00
+//- 				.contactHead__info Москва, Дербеневская улица, 11
 
-		.nav-mobile
-			.contactHead__tel 
-				a(href="#") +7 (480) 000 00 00
-				.contactHead__info Москва, Дербеневская улица, 11
-
-			#contain
-				.menu-icon
-					.bar1 
-					.bar2 
-					.bar3
-				#nav  
-					ul.nav-mobile__list
-						li.nav-mobile__item 
-							a(href="#") О нас
-						li.nav-mobile__item 
-							a(href="#") Видео
-						li.nav-mobile__item 
-							a(href="#") Преимущества
-						li.nav-mobile__item 
-							a(href="#") О преподавателе
-						li.nav-mobile__item 
-							a(href="#") Отзывы
-						li.nav-mobile__item 
-							a(href="#") Цены
-						li.nav-mobile__item 
-							a(href="#") Контакты
+header 
+	<nav class="navbar">
+		<div class="navbar-container container">
+			<input type="checkbox" name="" id="">
+			<div class="hamburger-lines">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</div>
+			<h1 class="logo">RS</h1>
+			<ul class="menu-items">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#food">Category</a></li>
+				<li><a href="#food-menu">Menu</a></li>
+				<li><a href="#testimonials">Testimonial</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
 			
-			 
+		</div>
+		</nav>
 
+
+		//- .nav-mobile
+		//- 	.contactHead__tel 
+		//- 		a(href="#") +7 (480) 000 00 00
+		//- 		.contactHead__info Москва, Дербеневская улица, 11
+
+		//- 	#contain
+		//- 		.menu-icon
+		//- 			.bar1 
+		//- 			.bar2 
+		//- 			.bar3
+		//- 		#nav  
+		//- 			ul.nav-mobile__list
+		//- 				li.nav-mobile__item 
+		//- 					a(href="#") О нас
+		//- 				li.nav-mobile__item 
+		//- 					a(href="#") Видео
+		//- 				li.nav-mobile__item 
+		//- 					a(href="#") Преимущества
+		//- 				li.nav-mobile__item 
+		//- 					a(href="#") О преподавателе
+		//- 				li.nav-mobile__item 
+		//- 					a(href="#") Отзывы
+		//- 				li.nav-mobile__item 
+		//- 					a(href="#") Цены
+		//- 				li.nav-mobile__item 
+		//- 					a(href="#") Контакты
 			
+		
