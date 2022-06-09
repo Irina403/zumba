@@ -4,14 +4,20 @@
 		justify-content: center;
 		align-items: center;
 		@include bp ($point_1){
-		  flex-direction: column;
+		  margin-top: 7rem;
 		}
 		@include bp ($point_3){
+			flex-direction: column;
 		  align-items: flex-start;
 		}
 		@include bp ($point_6){
 			align-items: center;
 		  }
+	}
+	&__col{
+		@include bp ($point_3){
+			width: 100%;
+		}
 	}
 	&__title{
 		display: flex;
@@ -40,9 +46,9 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content:center;
-			@include bp ($point_3){
-				align-items: flex-start;
-			}
+			// @include bp ($point_3){
+			// 	align-items: flex-start;
+			// }
 			@include bp ($point_5){
 				align-items: center;
 			}

@@ -42,10 +42,11 @@ mixin scripts
 	if production_status === 'development'
 		script(type='text/javascript')
 			|window.productionStatus = 'development';
+	script(src='js/main.js')
 	script(src="js/libs.js")
 	//- script(src="js/components.js")
 	script(src='js/menu.js')
-	script(src='js/main.js')
+	
 
 //- scripts from cdn
 mixin script_cdn(array)

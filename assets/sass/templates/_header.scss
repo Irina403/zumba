@@ -8,8 +8,6 @@
   }
   
   .navbar {
-	// padding-top: 2rem;
-	// box-shadow: 0px 5px 10px 0px #aaa;
 	position: fixed;
 	width: 100%;
 	background: transparant;
@@ -38,7 +36,7 @@
   }
 
   .menu-items {
-	// order: 2;
+
 	display: flex;
   }
   
@@ -59,10 +57,15 @@
   }
   
   .menu-items a:hover {
-	color: #FF5C01;
+	color: #ffaedd;
+	text-decoration-line:underline;
 	transition: color 0.3s ease-in-out;
   }
-  
+  .tel a:hover{
+
+		color: #ffaedd;
+		transition: color 0.3s ease-in-out;
+	}
 
   /* ............//// Showcase styling ////......... */
   
@@ -149,6 +152,9 @@
 	  padding-left: 50px;
 	  transition: transform 0.5s ease-in-out;
 	  box-shadow: 5px 0px 10px 0px #aaa;
+	}
+	.menu-toggle-open{
+		margin-left: -300px;
 	}
   
 	.navbar .menu-items li {
