@@ -84,7 +84,9 @@
 		color: #000;
 		text-align: center;
 		&-text{
-			padding-bottom: 2rem;
+			display: flex;
+			justify-content: center;
+			// padding-bottom: 2rem;
 			font-size: 1.2rem;
 			color: rgb(155, 155, 155);
 			text-align: center;

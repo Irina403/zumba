@@ -132,6 +132,7 @@ label{
     font-size: 1.2rem;
     color: rgb(153, 153, 153);
 		font-family: $font_1;
+	cursor: pointer;
 }
 
 
@@ -598,6 +599,7 @@ span{
 		}
 	&__button{
 		margin-left: 12.5%;
+		cursor: pointer;
 		@include bp ($point_5){
 			margin-left: 0%;
 		}
@@ -665,6 +667,7 @@ span{
 		@include bp ($point_5){
 			margin-bottom: 2rem;
 			font-size: 1.2rem;
+			width: 90%;
 		}
 	}
 	&__note{
@@ -677,15 +680,21 @@ span{
 		}
 	}
 	&__button{
+		display: flex;
+		justify-content: center;
 		margin-top: 4rem;
-		margin-left: 15rem;
+		margin-left: -15rem;
 		color: #fff;
+		cursor: pointer;
 		@include bp ($point_1){
 			margin-left: 0rem;
 		}
 		@include bp ($point_5){
-			margin-left:2rem;
+			margin-top: 5rem;
 		}
+		// @include bp ($point_5){
+		// 	margin-left:2rem;
+		// }
 	}
 }
 .blockPrice{
